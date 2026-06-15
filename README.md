@@ -46,19 +46,19 @@ npm run build
 ## 📁 Project Structure
 
 ```text
-├── src/
-│   ├── types/
-│   │   └── task.ts          # TypeScript interfaces and union types
-│   ├── utils/
-│   │   └── storage.ts       # LocalStorage helper functions (Closures/Generics)
-│   ├── dom/
-│   │   └── render.ts        # DOM manipulation and event handling logic
-│   ├── main.ts              # Application entry point
-│   └── style.css            # Application styling
+nyc-quiz/
 ├── index.html
 ├── package.json
-├── tsconfig.json            # Strict-mode TypeScript configuration
-└── README.md
+├── tsconfig.json
+└── src/
+    ├── main.ts
+    ├── style.css
+    ├── types/
+    │   └── index.ts
+    ├── data/
+    │   └── api.ts
+    └── utils/
+        └── dom.ts
 
 ```
 
