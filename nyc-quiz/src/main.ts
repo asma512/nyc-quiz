@@ -56,7 +56,7 @@ const renderQuestion = () => {
   const optionsContainer = getElement<HTMLDivElement>('#options-container');
 
   // Modern syntax: Arrow functions
-  options.forEach((option) => {
+  options.forEach((option: string) => {
     const button = createElement<HTMLButtonElement>('button', 'option-btn', option);
     
     // Event Handling

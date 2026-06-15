@@ -1,4 +1,4 @@
-import { Question } from '../types';
+import { Question, QuizState } from './types/index';
 
 // Simulating an asynchronous data fetch (Bonus Requirement)
 export const fetchNYCQuestions = async (): Promise<Question[]> => {
@@ -25,6 +25,27 @@ export const fetchNYCQuestions = async (): Promise<Question[]> => {
             text: "Which bridge was the first to connect Manhattan and Brooklyn?",
             options: ["Williamsburg Bridge", "Manhattan Bridge", "Brooklyn Bridge", "Queensboro Bridge"],
             correctAnswer: "Brooklyn Bridge",
+            difficulty: "medium"
+          },
+          {
+            id: 4,
+            text: "What is currently the tallest building in New York City?",
+            options: ["Empire State Building", "Chrysler Building", "One World Trade Center", "Central Park Tower"],
+            correctAnswer: "One World Trade Center",
+            difficulty: "easy"
+          },
+          {
+            id: 5,
+            text: "Which New York City park is the largest by land area?",
+            options: ["Central Park", "Prospect Park", "Flushing Meadows-Corona Park", "Pelham Bay Park"],
+            correctAnswer: "Pelham Bay Park",
+            difficulty: "hard"
+          },
+          {
+            id: 6,
+            text: "What is the name of the transit hub famous for the celestial mural painted on its main concourse ceiling?",
+            options: ["Penn Station", "Grand Central Terminal", "Port Authority Bus Terminal", "Oculus"],
+            correctAnswer: "Grand Central Terminal",
             difficulty: "medium"
           }
         ];
