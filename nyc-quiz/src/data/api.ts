@@ -1,4 +1,4 @@
-import { Question, QuizState } from './types/index';
+import { Question } from '../types/index';
 
 // Simulating an asynchronous data fetch (Bonus Requirement)
 export const fetchNYCQuestions = async (): Promise<Question[]> => {
